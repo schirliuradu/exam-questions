@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import axios from "../axios-instance"
 import Flash from "./Flash"
 
-function Form() {
+function Form({ custom, setCustom }) {
   const [flash, setFlash] = useState(false)
   const [title, setTitle] = useState("")
   const [answer, setAnswer] = useState("")
@@ -17,6 +17,7 @@ function Form() {
       .post("/first-exam/questions.json", settings)
       .then((res) => {
         setFlash(true)
+        setCustom(custom + 1)
         setTitle("")
         setAnswer("")
       })

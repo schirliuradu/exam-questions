@@ -11,10 +11,10 @@ function Flash({ active, setActive }) {
     <>
       {active && (
         <div
-          class="flashMessage bg-orange-100 border-l-4 border-red-500 text-orange-700 px-4 py-3"
+          className="flashMessage bg-orange-100 border-l-4 border-red-500 text-orange-700 px-4 py-3"
           role="alert"
         >
-          <p class="font-bold">Nuova domanda aggiunta!</p>
+          <p className="font-bold">Nuova domanda aggiunta!</p>
         </div>
       )}
     </>
