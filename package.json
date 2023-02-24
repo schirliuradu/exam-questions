@@ -1,11 +1,11 @@
 {
-  "name": "complex-react-app",
+  "name": "test-react-app",
   "version": "1.0.0",
   "description": "",
   "main": "test.js",
   "scripts": {
     "build:css": "postcss app/assets/main.css -o app/main.css",
-    "watch:css": "postcss app/assets/main.css -o app/main.css",
+    "watch:css": "npx tailwindcss -i app/assets/main.css -o app/main.css --watch",
     "dev": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -34,7 +34,6 @@
     "react-tooltip": "^4.2.5",
     "react-transition-group": "^4.3.0",
     "socket.io-client": "^2.3.0",
-    "tailwindcss": "^1.4.6",
     "use-immer": "^0.4.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
@@ -42,6 +41,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.0",
-    "postcss-cli": "^7.1.1"
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^3.2.7"
   }
 }

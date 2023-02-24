@@ -32,7 +32,7 @@ function Form({ custom, setCustom }) {
     if (title && answer) {
       insertQuestion()
     } else {
-      alert("Forse dovresti compilare qualche campo, scienza :D")
+      alert("Forse dovresti compilare qualche campo :D")
     }
   }
 
